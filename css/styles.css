@@ -1,0 +1,113 @@
+html, body {
+    scroll-behavior: smooth;
+    font-family: 'Raleway', sans-serif;
+    height: 100%;
+}
+
+.bg {
+    width: 100%;
+    height: 100vh;
+    z-index: -1;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    display: flex;
+    align-items: center;
+}
+
+.section-middle {
+    padding-top: 5em;
+}
+
+.section-bottom {
+    padding: 5em 0 5em 0;
+}
+
+.frosted-card {
+    background-color: rgba(25, 25, 25, 0.5);
+    backdrop-filter: blur(7px);
+    -webkit-backdrop-filter: blur(7px);
+}
+
+.bg-dark {
+    background-color: #35363A !important;
+}
+
+.margin-bottom {
+    margin-bottom: 1.5em;
+}
+
+.row {
+    display: flex;
+    width: 100%;
+}
+
+.icon, .icon:hover {
+    flex: 1;
+    color: white;
+    font-size: 2em;
+}
+
+.icon-align {
+    vertical-align: middle;
+    float: right;
+}
+
+.btn-responsive {
+    height: 4em;
+}
+
+input.error {
+    color: red;
+}
+
+.box:nth-of-type(2) {
+    margin: 0px 10px 0px 10px;
+}
+
+footer {
+    background-color: #343A40;
+    font-size: 1.25em;
+}
+
+/*
+ * Removing outlines in firefox
+ */
+:focus {outline:none;}
+::-moz-focus-inner {border:0;}
+
+/*
+ * Media queries to dynamically scale the submit button.
+ */
+@media (max-width: 399px) {
+    .btn-responsive {
+        width: 50%;
+    }
+}
+
+@media (min-width: 400px) and (max-width: 768px) {
+    .btn-responsive {
+        width: 35%;
+    }
+}
+
+@media (min-width: 769px) and (max-width: 992px) {
+    .btn-responsive {
+        width: 25%;
+    }
+}
+
+@media (min-width: 993px) {
+    .btn-responsive {
+        width: 20%;
+    }
+}
+
+/* Debug
+* {
+    background: #000 !important;
+    color     : #0F0 !important;
+    outline   : solid #F00 1px !important;
+  }
+*/
